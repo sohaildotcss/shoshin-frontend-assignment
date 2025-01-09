@@ -1,12 +1,5 @@
 import { Card } from "@/components/ui/card";
-
-interface StatsCardProps {
-  title: string;
-  count: number;
-  subtitle: string;
-  subtitleColor: string;
-  bgColor : string;
-}
+import { StatsCardProps } from "@/Interfaces/LocalInterface";
 
 const StatsCard =({ 
   title, 
@@ -14,7 +7,7 @@ const StatsCard =({
   subtitle, 
   subtitleColor,
   bgColor 
-}: StatsCardProps) => {
+}: StatsCardProps ) => {
 
   return (
     <Card className={`flex flex-col gap-2 p-4 ${bgColor}`}>

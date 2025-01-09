@@ -6,13 +6,9 @@ import { FaCalendarDay, FaUserPlus, FaUsers } from "react-icons/fa";
 import { SiBuiltbybit } from "react-icons/si";
 import { BsHeadphones } from "react-icons/bs";
 import { IoMdSettings } from "react-icons/io";
-import { IoClose } from "react-icons/io5"; // Close icon
+import { IoClose } from "react-icons/io5";
 import Image from "next/image";
-
-interface SidebarProps {
-  isOpen: boolean;
-  onClose: () => void;
-}
+import { SidebarProps } from "@/Interfaces/LocalInterface";
 
 const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
   const menuItems = [

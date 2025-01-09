@@ -1,12 +1,15 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Input } from "@/components/ui/input";
-import { Dispatch, SetStateAction } from "react";
+import { HeaderPropsInterface } from "@/Interfaces/LocalInterface";
 import { BsBellFill } from "react-icons/bs";
 import { IoIosMenu } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
 import { LuMessageSquareMore } from "react-icons/lu";
 
-const Header = ({ isSidebarOpen, setIsSidebarOpen } : { isSidebarOpen : boolean, setIsSidebarOpen : Dispatch<SetStateAction<boolean>>}) => {
+const Header = ({ 
+    isSidebarOpen,
+    setIsSidebarOpen 
+} : HeaderPropsInterface ) => {
 
   return (
     <header className="bg-white p-4">

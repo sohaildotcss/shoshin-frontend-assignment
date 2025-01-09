@@ -1,13 +1,7 @@
 import { Card } from "@/components/ui/card";
+import { TrendCardProps } from "@/Interfaces/LocalInterface";
 import { IoIosArrowRoundUp } from "react-icons/io";
 import { LineChart, Line, ResponsiveContainer } from "recharts";
-
-interface TrendCardProps {
-  title: string;
-  count: number;
-  trend: string;
-  details: string[];
-}
 
 const data = [
   { value: 10 },
@@ -19,7 +13,13 @@ const data = [
   { value: 22 },
 ];
 
-const TrendCard = ({ title, count, trend, details }: TrendCardProps) => {
+const TrendCard = ({ 
+  title, 
+  count, 
+  trend, 
+  details 
+}: TrendCardProps ) => {
+  
   return (
     <Card className="p-6">
       <div className="flex justify-between items-start mb-6">
