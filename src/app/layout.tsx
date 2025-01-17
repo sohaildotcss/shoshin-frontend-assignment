@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "HR Dashboard",
-  description: "Developed y ANchal Raj",
+  title: "Vasitum HR Dashboard",
+  description: "A responsive HR dashboard built using React and Tailwind CSS for employee management, talent requests, and recruitment analytics.",
 };
+
 
 export default function RootLayout({
   children,

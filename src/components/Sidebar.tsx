@@ -46,7 +46,7 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
         >
           <IoClose className="h-4 w-4" />
         </button>
-        <Link href="/" className="flex items-center gap-2 font-bold text-2xl">
+        <Link href="/" className="flex items-center gap-2 lg:ml-9 font-bold text-2xl">
           <Image src="/logo.png" alt="logo" height={36} width={36} />
           <span className="text-background-customBlue">Vasitum</span>
         </Link>
@@ -60,7 +60,7 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
             </h2>
             <ul className="flex flex-col gap-2">
               {section.items.map((item, itemIdx) => (
-                <li key={itemIdx}>
+                <li key={itemIdx}> 
                   <Link
                     href={item.href}
                     className="flex items-center gap-3 px-4 py-2 text-gray-500 hover:bg-gray-50 rounded-lg"

@@ -21,11 +21,11 @@ const Header = ({
                 >
                     <IoIosMenu className="h-6 w-6" />
                 </button>
-                <div className="relative w-40 lg:w-64">
-                    <IoSearch className="absolute left-2 top-2.5 h-4 w-4 text-gray-400" />
+                <div className="relative lg:ml-8 w-40 lg:w-64">
+                    <IoSearch className="absolute right-2 top-2.5 h-4 w-4 text-[#B3B3B3]" />
                     <Input 
                         placeholder="Search" 
-                        className="pl-8 bg-background-customGray"
+                        className=" bg-background-customGray"
                     />
                 </div>
             </div>
