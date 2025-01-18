@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { formatDate } from "@/lib/formatDate";
 import { FiMoreHorizontal } from "react-icons/fi";
-
+import { RiArrowDropDownLine } from "react-icons/ri";
 const ScheduleCard = () => {
 	const schedules = [
 		{
@@ -25,11 +25,11 @@ const ScheduleCard = () => {
 		<Card className="p-6 flex flex-col gap-10 lg:ml-24 lg:mr-6">
 			<div className="flex justify-between items-center">
 				<h3 className="font-semibold">Upcoming Schedule</h3>
-				<button className="text-sm text-gray-500 border-2 px-2 py-1 rounded-md">
+				<button className="text-sm text-gray-500 border-2 px-1 py-0 rounded-md flex items-center justify-center">
 					{formatDate()}
+					<RiArrowDropDownLine className="h-10 w-10 font-light cursor-pointer" />
 				</button>
 			</div>
-
 			<div className="flex flex-col gap-4">
 				{schedules.map((schedule, idx) => (
 					<div

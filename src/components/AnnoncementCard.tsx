@@ -39,9 +39,9 @@ const AnnouncementCard = () => {
 						key={index}
 						className="flex border lg:pl-0 p-2 bg-background-customGray rounded-lg w-[610px]"
 					>
-						<div className="flex-1  p-2 ">
-							<p className="font-medium mb-1">{announcement.title}</p>
-							<p className="text-[12px] text-gray-500">{announcement.time}</p>
+						<div className="flex-1 p-2 ">
+							<p className="font-medium lg:w-96 mb-1">{announcement.title}</p>
+							<p className="text-[12px]  text-gray-500">{announcement.time}</p>
 						</div>
 						<div className="flex items-center gap-2">
 							{announcement.pinned && (
@@ -58,12 +58,10 @@ const AnnouncementCard = () => {
 					</div>
 				))}
 			</div>
-
-			<button className="w-full text-center text-red-500 mt-4">
+			<button className="w-full text-center text-red-500 mt-4 font-semibold">
 				See All Announcement
 			</button>
 		</Card>
 	);
 };
-
 export default AnnouncementCard;
