@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const ActivityCard = () => {
 	return (
-		<Card className=" ml-24 p-6 pb-0  mr-6 flex flex-col gap-8 bg-[#121843] text-white">
+		<Card className=" ml-24 p-6 pb-0 mr-6 flex flex-col gap-8 bg-[#121843] text-white">
 			<h3 className="text-lg font-medium">Recently Activity</h3>
 			<div className="flex flex-col gap-2">
 				<p className="text-xs font-light text-gray-400">
