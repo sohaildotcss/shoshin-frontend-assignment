@@ -45,14 +45,14 @@ const Header = ({
                     <Avatar className="w-10 h-10">
                     <AvatarImage 
                         src="/avatar.png"
-                        className="object-cover rounded-full"
+                        className="object-cover rounded-full cursor-pointer"
                     />
                     <AvatarFallback>AJ</AvatarFallback>
                     </Avatar>
-                    <p className="hidden md:block text-md font-bold">
+                    <p className="hidden md:block text-md font-bold cursor-pointer">
                         Admirra John
                       </p>
-                      <RiArrowDropDownLine className="h-10 w-10 font-normal"/>
+                      <RiArrowDropDownLine className="h-10 w-10 font-normal cursor-pointer"/>
                 </div>
             </div>
         </div>

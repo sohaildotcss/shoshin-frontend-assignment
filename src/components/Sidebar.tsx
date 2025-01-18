@@ -70,11 +70,11 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
 									<li key={itemIdx}>
 										<Link
 											href={item.href}
-											className={`flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-gray-50 ${
+											className={`flex items-center gap-6 px-4 py-2 rounded-lg hover:bg-gray-50 ${
 												globalIndex === 0 ? "text-red-500" : "text-gray-500"
 											}`}
 										>
-											<item.icon className="h-5 w-5" />
+											<item.icon className="h-5 w-5 text-iconColor" />
 											<span>{item.label}</span>
 										</Link>
 									</li>
