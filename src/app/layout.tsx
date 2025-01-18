@@ -2,21 +2,19 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Shoshin.tech Frontend Intern Challenge",
-  description: "A responsive HR dashboard built using React and Tailwind CSS for employee management, talent requests, and recruitment analytics.",
+	title: "Shoshin.tech Frontend Intern Challenge",
+	description:
+		"A responsive HR dashboard built using React and Tailwind CSS for employee management, talent requests, and recruitment analytics.",
 };
 
-
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className="antialiased">
-          {children}
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en">
+			<body className="antialiased">{children}</body>
+		</html>
+	);
 }
