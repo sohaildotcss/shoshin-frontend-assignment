@@ -4,7 +4,9 @@ import { HeaderPropsInterface } from "@/Interfaces/LocalInterface";
 import { BsBellFill } from "react-icons/bs";
 import { IoIosMenu } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
-import { LuMessageSquareMore } from "react-icons/lu";
+import { RiMessage2Fill } from "react-icons/ri";
+import { RiArrowDropDownLine } from "react-icons/ri";
+
 
 const Header = ({ 
     isSidebarOpen,
@@ -37,19 +39,20 @@ const Header = ({
                     </span>
                 </button>
                 <button>
-                    <LuMessageSquareMore className="h-5 w-5 text-gray-600"/>
+                    <RiMessage2Fill className="h-6 w-6 text-iconColor"/>
                 </button>
                 <div className="flex items-center gap-2">
                     <Avatar className="w-10 h-10">
                     <AvatarImage 
-                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400"
+                        src="/avatar.png"
                         className="object-cover rounded-full"
                     />
                     <AvatarFallback>AJ</AvatarFallback>
                     </Avatar>
-                    <p className="hidden md:block text-sm font-normal">
-                        Anchal Raj
-                    </p>
+                    <p className="hidden md:block text-md font-bold">
+                        Admirra John
+                      </p>
+                      <RiArrowDropDownLine className="h-10 w-10 font-normal"/>
                 </div>
             </div>
         </div>
