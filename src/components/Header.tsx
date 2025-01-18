@@ -21,19 +21,19 @@ const Header = ({
                 >
                     <IoIosMenu className="h-6 w-6" />
                 </button>
-                <div className="relative lg:ml-8 w-40 lg:w-64">
-                    <IoSearch className="absolute right-2 top-2.5 h-4 w-4 text-[#B3B3B3]" />
+                <div className="relative lg:ml-8 w-40 lg:w-72">
+                    <IoSearch className="absolute right-2 top-2.5 h-4 w-4 text-iconColor cursor-pointer" />
                     <Input 
                         placeholder="Search" 
                         className=" bg-background-customGray"
                     />
                 </div>
             </div>
-            <div className="flex items-center gap-3 lg:gap-6">
+            <div className="flex items-center gap-3 lg:gap-6 ">
                 <button className="relative">
-                    <BsBellFill className="h-5 w-5 text-gray-600"/>
-                    <span className="absolute -top-1 -right-1 h-3 w-3 bg-red-500 rounded-full text-[10px] text-white flex items-center justify-center">
-                        3
+                    <BsBellFill className="h-6 w-6 text-iconColor"/>
+                    <span className="absolute bottom-3.5 left-3.5 border-2 border-white  h-3 w-3 bg-red-500 rounded-full text-[10px] text-white flex items-center justify-center">
+                        
                     </span>
                 </button>
                 <button>

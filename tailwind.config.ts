@@ -9,14 +9,16 @@ export default {
   ],
   theme: {
   	extend: {
-  		colors: {
-  			background: {
-				DEFAULT : 'hsl(var(--background))',
-				customGray : '#FAFAFA',
-				customBlue : '#0A337A'
-
-			},
-  			foreground: 'hsl(var(--foreground))',
+		  colors: {
+			  background: {
+				  DEFAULT : 'hsl(var(--background))',
+				  customGray : '#FAFAFA',
+				  customBlue: '#0A337A',
+				  
+				  
+				},
+				foreground: 'hsl(var(--foreground))',
+				"iconColor": '#B3B3B3',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Vasitum HR Dashboard",
+  title: "Shoshin.tech Frontend Intern Challenge",
   description: "A responsive HR dashboard built using React and Tailwind CSS for employee management, talent requests, and recruitment analytics.",
 };
 
