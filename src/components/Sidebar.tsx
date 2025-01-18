@@ -74,7 +74,11 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
 												globalIndex === 0 ? "text-red-500" : "text-gray-500"
 											}`}
 										>
-											<item.icon className="h-5 w-5 text-iconColor" />
+											<item.icon
+												className={`h-5 w-5 ${
+													globalIndex === 0 ? "text-red-500" : "text-iconColor"
+												}`}
+											/>
 											<span>{item.label}</span>
 										</Link>
 									</li>
