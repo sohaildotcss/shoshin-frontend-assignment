@@ -23,4 +23,5 @@ export interface TrendCardProps {
     count: number;
     trend: string;
     details: string[];
+    bgColor : string;
 }

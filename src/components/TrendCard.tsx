@@ -13,7 +13,7 @@ const data = [
 	{ value: 22 },
 ];
 
-const TrendCard = ({ title, count, trend, details }: TrendCardProps) => {
+const TrendCard = ({ title, count, trend, details,bgColor }: TrendCardProps) => {
 	return (
 		<Card className="p-6 pb-0 w-80">
 			<div className="flex justify-between items-start mb-6 ">
@@ -61,7 +61,7 @@ const TrendCard = ({ title, count, trend, details }: TrendCardProps) => {
 							/>
 						</LineChart>
 					</ResponsiveContainer>
-					<p className="text-sm bg-red-50 px-2 py-1 rounded-md text-red-500">
+					<p className={`text-sm ${bgColor} px-2 py-1 rounded-md text-red-500`}>
 						{trend}
 					</p>
 				</div>

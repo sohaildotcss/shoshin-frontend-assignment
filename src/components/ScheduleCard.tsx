@@ -22,7 +22,7 @@ const ScheduleCard = () => {
 	];
 
 	return (
-		<Card className="p-6 flex flex-col gap-10 lg:ml-24 lg:mr-6">
+		<Card className="p-6 flex flex-col lg:ml-24 lg:mr-6 lg:pb-0">
 			<div className="flex justify-between items-center">
 				<h3 className="font-semibold">Upcoming Schedule</h3>
 				<button className="text-sm text-gray-500 border-2 px-1 py-0 rounded-md flex items-center justify-center">
@@ -30,31 +30,27 @@ const ScheduleCard = () => {
 					<RiArrowDropDownLine className="h-10 w-10 font-light cursor-pointer" />
 				</button>
 			</div>
-			<div className="flex flex-col gap-4">
+			<div className="flex flex-col lg:gap-2">
+				<p className="text-sm text-gray-500">Priority</p>
 				{schedules.map((schedule, idx) => (
 					<div
 						key={idx}
-						className="flex items-start justify-between gap-4 p-4 bg-background-customGray rounded-lg"
+						className="flex items-center justify-between gap-4 p-4 bg-background-customGray border rounded-lg"
 					>
-						<div className="flex-1">
-							<div className="flex items-center gap-2 mb-1">
+						<div className="flex-1 ">
+							<div className="flex items-center gap-2 mb-1 ">
 								<p className="font-medium">{schedule.title}</p>
-								{schedule.priority && (
-									<span className="px-2 py-0.5 text-xs bg-red-100 text-red-600 rounded">
-										Priority
-									</span>
-								)}
 							</div>
 							<p className="text-sm text-gray-500">{schedule.time}</p>
 						</div>
 						<button>
-							<FiMoreHorizontal className="h-4 w-4 text-gray-400" />
+							<FiMoreHorizontal className="h-6 w-6 text-gray-400" />
 						</button>
 					</div>
 				))}
 			</div>
 
-			<button className="w-full text-center text-red-500">
+			<button className="w-full text-center text-red-500 mt-10 font-semibold">
 				Create a New Schedule
 			</button>
 		</Card>

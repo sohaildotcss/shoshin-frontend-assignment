@@ -45,28 +45,30 @@ const Dashboard = () => {
 											count={10}
 											subtitle="4 Active hiring"
 											subtitleColor="text-blue-500"
-											bgColor="bg-blue-100"
+											bgColor="bg-[#e8f0fb]"
 										/>
 										<StatsCard
 											title="New Employees"
 											count={24}
 											subtitle="4 Department"
 											subtitleColor="text-purple-500"
-											bgColor="bg-purple-100"
+											bgColor="bg-[#fdebf9]"
 										/>
 									</div>
 									<div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-28  mb-6 ">
-										<TrendCard 
+										<TrendCard
 											title="Total Employees"
 											count={216}
 											trend="+2% Past month"
 											details={["120 Men", "96 Women"]}
+											bgColor="bg-[#ffefe7]"
 										/>
 										<TrendCard
 											title="Talent Request"
 											count={16}
 											trend="+5% Past month"
 											details={["6 Men", "10 Women"]}
+											bgColor="bg-[#ffefe7]"
 										/>
 									</div>
 									<AnnouncementCard />
